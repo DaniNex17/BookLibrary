@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Infraestructure.Entity.Models
 {
@@ -13,8 +8,9 @@ namespace Infraestructure.Entity.Models
     {
         [Key]
         public int Id { get; set; }
+
         [Required]
-        [MaxLength(20)]
+        [MaxLength(100)]
         public string Description { get; set; }
 
         public IEnumerable<PermissionEntity> PermissionEntity { get; }

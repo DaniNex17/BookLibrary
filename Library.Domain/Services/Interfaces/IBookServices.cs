@@ -11,8 +11,8 @@ namespace Library.Domain.Services.Interfaces
     {
         Task<BookDto> GetById(int id);
         Task<IEnumerable<BookDto>> GetAll();
-        Task Create(BookDto bookDto);
-        Task Update(BookDto bookDto);
+        Task Create(AddBookDto bookDto);
+        Task Update(UpdateBookDto bookDto);
         Task Delete(int id);
     }
 }

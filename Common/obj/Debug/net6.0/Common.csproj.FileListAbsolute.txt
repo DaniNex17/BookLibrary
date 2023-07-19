@@ -12,3 +12,17 @@ C:\Proyecto\LibraryMVC\Common\obj\Debug\net6.0\Common.dll
 C:\Proyecto\LibraryMVC\Common\obj\Debug\net6.0\refint\Common.dll
 C:\Proyecto\LibraryMVC\Common\obj\Debug\net6.0\Common.pdb
 C:\Proyecto\LibraryMVC\Common\obj\Debug\net6.0\ref\Common.dll
+C:\Proyectos\BookLibraryDaniel\Common\bin\Debug\net6.0\Common.deps.json
+C:\Proyectos\BookLibraryDaniel\Common\bin\Debug\net6.0\Common.dll
+C:\Proyectos\BookLibraryDaniel\Common\bin\Debug\net6.0\Common.pdb
+C:\Proyectos\BookLibraryDaniel\Common\obj\Debug\net6.0\Common.csproj.AssemblyReference.cache
+C:\Proyectos\BookLibraryDaniel\Common\obj\Debug\net6.0\Common.Resources.GeneralMessages.resources
+C:\Proyectos\BookLibraryDaniel\Common\obj\Debug\net6.0\Common.csproj.GenerateResource.cache
+C:\Proyectos\BookLibraryDaniel\Common\obj\Debug\net6.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyectos\BookLibraryDaniel\Common\obj\Debug\net6.0\Common.AssemblyInfoInputs.cache
+C:\Proyectos\BookLibraryDaniel\Common\obj\Debug\net6.0\Common.AssemblyInfo.cs
+C:\Proyectos\BookLibraryDaniel\Common\obj\Debug\net6.0\Common.csproj.CoreCompileInputs.cache
+C:\Proyectos\BookLibraryDaniel\Common\obj\Debug\net6.0\Common.dll
+C:\Proyectos\BookLibraryDaniel\Common\obj\Debug\net6.0\refint\Common.dll
+C:\Proyectos\BookLibraryDaniel\Common\obj\Debug\net6.0\Common.pdb
+C:\Proyectos\BookLibraryDaniel\Common\obj\Debug\net6.0\ref\Common.dll

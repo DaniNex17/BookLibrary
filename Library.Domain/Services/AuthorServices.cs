@@ -1,46 +1,33 @@
 ﻿using Common.Exceptions;
-using Common.Resources;
 using Infraestructure.Entity.Models;
 using Infraestructure.UnitOfWork.Interface;
 using Library.Domain.Dto.Author;
-using Library.Domain.Dto.User;
 using Library.Domain.Services.Interfaces;
-using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Library.Domain.Services
 {
     public class AuthorServices : IAuthorServices
     {
+        #region Attributes
         private readonly IUnitOfWork _unitOfWork;
+        #endregion
 
+        #region Builder
         public AuthorServices(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
+        #endregion
 
-        public async Task<AuthorDto> GetById(int id)
-        {
-            AuthorEntity author = _unitOfWork.AuthorRepository.FirstOrDefault(x => x.Id == id)
-                ?? throw new BusinessException(GeneralMessages.ItemNoFound);
-            AuthorDto getAuthor = new AuthorDto()
-            {
-                Id = author.Id,
-                Name = author.Name,
-                LastName = author.LastName
-                
-            };
-            return getAuthor;
-        }
+        #region Methods
 
-        public async Task<IEnumerable<AuthorDto>> GetAll()
+        private AuthorEntity GetById(int id) => _unitOfWork.AuthorRepository.FirstOrDefault(x => x.Id == id);
+
+        public List<AuthorDto> GetAll()
         {
-            var authorEntities = _unitOfWork.AuthorRepository.GetAll().ToList();
-            var authorDtos = authorEntities.Select(authorEntity => new AuthorDto
+            IEnumerable<AuthorEntity> authorEntities = _unitOfWork.AuthorRepository.GetAll();
+
+            List<AuthorDto> authorDtos = authorEntities.Select(authorEntity => new AuthorDto
             {
                 Id = authorEntity.Id,
                 Name = authorEntity.Name,
@@ -50,9 +37,10 @@ namespace Library.Domain.Services
             return authorDtos;
         }
 
-        public async Task Create(AuthorDto authorDto)
+        public async Task<bool> Create(AddAuthorDto authorDto)
         {
-            if (_unitOfWork.AuthorRepository.FirstOrDefault(x => x.Name == authorDto.Name && x.LastName == authorDto.LastName) != null)
+            if (_unitOfWork.AuthorRepository.FirstOrDefault(x => x.Name.ToLower() == authorDto.Name.ToLower()
+                                                           && x.LastName.ToLower() == authorDto.LastName.ToLower()) != null)
                 throw new BusinessException("No se puede insertar un autor duplicado");
 
             AuthorEntity authorEntity = new AuthorEntity
@@ -60,32 +48,34 @@ namespace Library.Domain.Services
                 Name = authorDto.Name,
                 LastName = authorDto.LastName
             };
-
             _unitOfWork.AuthorRepository.Insert(authorEntity);
-            await _unitOfWork.Save();
+
+            return await _unitOfWork.Save() > 0;
         }
 
-        public async Task Update(AuthorDto updateAuthorDto)
+        public async Task<bool> Update(AuthorDto updateAuthorDto)
         {
-            AuthorEntity authorEntity = _unitOfWork.AuthorRepository.FirstOrDefault(x => x.Id == updateAuthorDto.Id);
+            AuthorEntity authorEntity = GetById(updateAuthorDto.Id);
             if (authorEntity == null)
                 throw new BusinessException("El autor no existe");
 
             authorEntity.Name = updateAuthorDto.Name;
             authorEntity.LastName = updateAuthorDto.LastName;
-
             _unitOfWork.AuthorRepository.Update(authorEntity);
-            await _unitOfWork.Save();
+
+            return await _unitOfWork.Save() > 0;
         }
 
-        public async Task Delete(int id)
+        public async Task<bool> Delete(int id)
         {
-            AuthorEntity authorEntity = _unitOfWork.AuthorRepository.FirstOrDefault(x => x.Id == id);
+            AuthorEntity authorEntity = GetById(id);
             if (authorEntity == null)
                 throw new BusinessException("El autor no existe");
 
             _unitOfWork.AuthorRepository.Delete(authorEntity);
-            await _unitOfWork.Save();
+
+            return await _unitOfWork.Save() > 0;
         }
+        #endregion
     }
 }

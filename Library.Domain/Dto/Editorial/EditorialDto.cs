@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Library.Domain.Dto.Editorial
 {
-    public class EditorialDto
+    public class EditorialDto: AddEditorialDto
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string Sede { get; set; }
     }
 }

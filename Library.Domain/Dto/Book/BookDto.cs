@@ -6,16 +6,10 @@ using System.Threading.Tasks;
 
 namespace Library.Domain.Dto.Book
 {
-    public class BookDto
+    public class BookDto: AddBookDto
     {
         public int Id { get; set; }
-        public string Title { get; set; }
-        public string Sinopsis { get; set; }
-        public int N_Pages { get; set; }
-        public string UrlImage { get; set; }
-        public int IdAuthor { get; set; }
         public string AuthorName { get; set; }
-        public int IdEditorial { get; set; }
         public string EditorialName { get; set; }
     }
 }

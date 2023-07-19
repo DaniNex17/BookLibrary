@@ -1,22 +1,17 @@
-﻿using Infraestructure.Entity.Models;
+﻿using Common.Exceptions;
+using Common.Helpers;
+using Common.Resources;
+using Infraestructure.Entity.Models;
 using Infraestructure.UnitOfWork.Interface;
-using Library.Domain.Dto.User;
 using Library.Domain.Dto;
+using Library.Domain.Dto.User;
 using Library.Domain.Services.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
-using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Text;
-using System.Threading.Tasks;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
-using Common.Exceptions;
-using Common.Resources;
 using static Common.Constant.Const;
-using Common.Helpers;
 
 namespace Library.Domain.Services
 {
@@ -92,11 +87,14 @@ namespace Library.Domain.Services
 
         public GetUserDto Get(int idUser)
         {
-            UserEntity user = _unitOfWork.UserRepository.FirstOrDefault(x => x.Id == idUser)
-                ?? throw new BusinessException(GeneralMessages.ItemNoFound);
+            UserEntity user = _unitOfWork.UserRepository.FirstOrDefault(x => x.Id == idUser);
+
+            if (user == null)
+                throw new BusinessException(GeneralMessages.ItemNoFound);
+
             GetUserDto getUser = new GetUserDto()
             {
-                Id = user.Id,               
+                Id = user.Id,
                 Password = user.Password,
                 IdRole = user.IdRole,
             };
@@ -120,12 +118,12 @@ namespace Library.Domain.Services
 
         public async Task<bool> Insert(AddUserDto dto)
         {
-            if (_unitOfWork.UserRepository.FirstOrDefault(x => x.UserName == dto.UserName) != null)
-                throw new BusinessException(GeneralMessages.RegisteredUserName);
+            //if (_unitOfWork.UserRepository.FirstOrDefault(x => x.UserName == dto.UserName) != null)
+            //throw new BusinessException(GeneralMessages.RegisteredUserName);
 
             UserEntity user = new UserEntity()
-            {               
-                Password = Common.Helpers.Utils.PassEncrypt(dto.Password),               
+            {
+                Password = Common.Helpers.Utils.PassEncrypt(dto.Password),
                 IdRole = dto.IdRole
             };
             _unitOfWork.UserRepository.Insert(user);
@@ -141,7 +139,7 @@ namespace Library.Domain.Services
             if (userEntity == null)
                 throw new BusinessException(GeneralMessages.ItemNoFound);
 
-            
+
             _unitOfWork.UserRepository.Delete(userEntity);
 
             return await _unitOfWork.Save() > 0;

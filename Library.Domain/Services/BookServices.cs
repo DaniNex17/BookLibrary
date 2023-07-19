@@ -36,9 +36,9 @@ namespace Library.Domain.Services
                 N_Pages = bookEntity.N_Pages,
                 UrlImage = bookEntity.UrlImage,
                 IdAuthor = bookEntity.IdAuthor,
-                AuthorName = bookEntity.AuthorEntity?.Name + " " + bookEntity.AuthorEntity?.LastName,
+                AuthorName = bookEntity.AuthorEntity.FullName,
                 IdEditorial = bookEntity.IdEditorial,
-                EditorialName = bookEntity.EditorialEntity?.Name
+                EditorialName = bookEntity.EditorialEntity.Name
             };
 
             return bookDto;
@@ -55,15 +55,15 @@ namespace Library.Domain.Services
                 N_Pages = bookEntity.N_Pages,
                 UrlImage = bookEntity.UrlImage,
                 IdAuthor = bookEntity.IdAuthor,
-                AuthorName = bookEntity.AuthorEntity?.Name + " " + bookEntity.AuthorEntity?.LastName,
+                AuthorName = bookEntity.AuthorEntity.FullName,
                 IdEditorial = bookEntity.IdEditorial,
-                EditorialName = bookEntity.EditorialEntity?.Name
+                EditorialName = bookEntity.EditorialEntity.Name
             });
 
             return bookDtos;
         }
 
-        public async Task Create(BookDto bookDto)
+        public async Task Create(AddBookDto bookDto)
         {
             if (_unitOfWork.BookRepository.FirstOrDefault(x => x.Title == bookDto.Title) != null)
                 throw new BusinessException("No se puede insertar un libro duplicado");
@@ -82,7 +82,7 @@ namespace Library.Domain.Services
             await _unitOfWork.Save();
         }
 
-        public async Task Update(BookDto bookDto)
+        public async Task Update(UpdateBookDto bookDto)
         {
             var bookEntity = _unitOfWork.BookRepository.FirstOrDefault(x => x.Id == bookDto.Id);
             if (bookEntity == null)
