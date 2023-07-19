@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "DX14VW3bcJWpHjANmUEBL2cjEmrPfDEWcLmk65ozy/wRUy37I7rTgifjzjlxQ97PHtVQmPTPs1o+guqh3Wq//g==",
+  "success": true,
+  "projectFilePath": "C:\\Proyecto\\LibraryMVC\\Common\\Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\daniel.vidal\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
+    "C:\\Users\\daniel.vidal\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\daniel.vidal\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.8.0\\microsoft.identitymodel.jsonwebtokens.6.8.0.nupkg.sha512",
+    "C:\\Users\\daniel.vidal\\.nuget\\packages\\microsoft.identitymodel.logging\\6.8.0\\microsoft.identitymodel.logging.6.8.0.nupkg.sha512",
+    "C:\\Users\\daniel.vidal\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.8.0\\microsoft.identitymodel.tokens.6.8.0.nupkg.sha512",
+    "C:\\Users\\daniel.vidal\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.8.0\\system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512",
+    "C:\\Users\\daniel.vidal\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

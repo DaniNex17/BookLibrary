@@ -1,0 +1,12 @@
+C:\Proyecto\LibraryMVC\Infraestructure.Entity\bin\Debug\net6.0\Infraestructure.Entity.deps.json
+C:\Proyecto\LibraryMVC\Infraestructure.Entity\bin\Debug\net6.0\Infraestructure.Entity.dll
+C:\Proyecto\LibraryMVC\Infraestructure.Entity\bin\Debug\net6.0\Infraestructure.Entity.pdb
+C:\Proyecto\LibraryMVC\Infraestructure.Entity\obj\Debug\net6.0\Infraestructure.Entity.csproj.AssemblyReference.cache
+C:\Proyecto\LibraryMVC\Infraestructure.Entity\obj\Debug\net6.0\Infraestructure.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyecto\LibraryMVC\Infraestructure.Entity\obj\Debug\net6.0\Infraestructure.Entity.AssemblyInfoInputs.cache
+C:\Proyecto\LibraryMVC\Infraestructure.Entity\obj\Debug\net6.0\Infraestructure.Entity.AssemblyInfo.cs
+C:\Proyecto\LibraryMVC\Infraestructure.Entity\obj\Debug\net6.0\Infraestructure.Entity.csproj.CoreCompileInputs.cache
+C:\Proyecto\LibraryMVC\Infraestructure.Entity\obj\Debug\net6.0\Infraestructure.Entity.dll
+C:\Proyecto\LibraryMVC\Infraestructure.Entity\obj\Debug\net6.0\refint\Infraestructure.Entity.dll
+C:\Proyecto\LibraryMVC\Infraestructure.Entity\obj\Debug\net6.0\Infraestructure.Entity.pdb
+C:\Proyecto\LibraryMVC\Infraestructure.Entity\obj\Debug\net6.0\ref\Infraestructure.Entity.dll
