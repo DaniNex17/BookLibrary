@@ -28,31 +28,11 @@ namespace Library.Domain.Services
         #endregion
 
         #region Methods
-        public async Task<BookDto> GetById(int id)
+        public BookEntity GetById(int id) => _unitOfWork.BookRepository.FirstOrDefault(x => x.Id == id);
+
+        public List<BookDto> GetAll()
         {
-            BookEntity bookEntity = _unitOfWork.BookRepository.FirstOrDefault(x => x.Id == id);
-            if (bookEntity == null)
-                throw new BusinessException(GeneralMessages.ItemNoFound);
-
-            BookDto bookDto = new BookDto
-            {
-                Id = bookEntity.Id,
-                Title = bookEntity.Title,
-                Sinopsis = bookEntity.Sinopsis,
-                N_Pages = bookEntity.N_Pages,
-                UrlImage = bookEntity.UrlImage,
-                IdAuthor = bookEntity.IdAuthor,
-                AuthorName = bookEntity.AuthorEntity.FullName,
-                IdEditorial = bookEntity.IdEditorial,
-                EditorialName = bookEntity.EditorialEntity.Name
-            };
-
-            return bookDto;
-        }
-
-        public async Task<IEnumerable<BookDto>> GetAll()
-        {
-            var bookEntities = _unitOfWork.BookRepository.GetAll().ToList();
+            var bookEntities = _unitOfWork.BookRepository.GetAll();
             var bookDtos = bookEntities.Select(bookEntity => new BookDto
             {
                 Id = bookEntity.Id,
@@ -69,7 +49,7 @@ namespace Library.Domain.Services
             return bookDtos;
         }
 
-        public async Task Create(AddBookDto bookDto)
+        public async Task<bool> Create(AddBookDto bookDto)
         {
             if (_unitOfWork.BookRepository.FirstOrDefault(x => x.Title == bookDto.Title) != null)
                 throw new BusinessException("No se puede insertar un libro duplicado");
@@ -85,12 +65,12 @@ namespace Library.Domain.Services
             };
 
             _unitOfWork.BookRepository.Insert(bookEntity);
-            await _unitOfWork.Save();
+            return await _unitOfWork.Save() > 0;
         }
 
-        public async Task Update(UpdateBookDto bookDto)
+        public async Task<bool> Update(UpdateBookDto bookDto)
         {
-            var bookEntity = _unitOfWork.BookRepository.FirstOrDefault(x => x.Id == bookDto.Id);
+            var bookEntity = GetById(bookDto.Id);
             if (bookEntity == null)
                 throw new BusinessException("El libro no existe");
 
@@ -102,18 +82,20 @@ namespace Library.Domain.Services
             bookEntity.IdEditorial = bookDto.IdEditorial;
 
             _unitOfWork.BookRepository.Update(bookEntity);
-            await _unitOfWork.Save();
+
+            return await _unitOfWork.Save() > 0;
         }
 
-        public async Task Delete(int id)
+        public async Task<bool> Delete(int id)
         {
-            var bookEntity = _unitOfWork.BookRepository.FirstOrDefault(x => x.Id == id);
+            var bookEntity = GetById(id);
             if (bookEntity == null)
                 throw new BusinessException("El libro no existe");
 
             _unitOfWork.BookRepository.Delete(bookEntity);
-            await _unitOfWork.Save();
-        } 
+
+            return await _unitOfWork.Save() > 0;
+        }
         #endregion
     }
 }

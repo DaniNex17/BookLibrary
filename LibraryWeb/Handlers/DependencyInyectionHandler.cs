@@ -17,7 +17,7 @@ namespace LibraryWeb.Handlers
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             //services.AddScoped<SeedDb>();
 
-            ////Domain
+            //Domain
             services.AddTransient<IAuthorServices, AuthorServices>();
             services.AddTransient<IEditorialServices, EditorialServices>();
             services.AddTransient<IBookServices, BookServices>();
