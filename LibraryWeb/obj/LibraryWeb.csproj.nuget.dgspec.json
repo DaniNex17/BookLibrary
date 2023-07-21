@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Proyectos\\BookLibraryDaniel\\LibraryWeb\\LibraryWeb.csproj": {}
+    "C:\\Proyecto\\LibraryWeb\\LibraryWeb.csproj": {}
   },
   "projects": {
-    "C:\\Proyectos\\BookLibraryDaniel\\Common\\Common.csproj": {
+    "C:\\Proyecto\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyectos\\BookLibraryDaniel\\Common\\Common.csproj",
+        "projectUniqueName": "C:\\Proyecto\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Proyectos\\BookLibraryDaniel\\Common\\Common.csproj",
-        "packagesPath": "C:\\Users\\juanp.rodriguez\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyectos\\BookLibraryDaniel\\Common\\obj\\",
+        "projectPath": "C:\\Proyecto\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\daniel.vidal\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyecto\\Common\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\juanp.rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\daniel.vidal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -70,25 +65,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Proyectos\\BookLibraryDaniel\\Infraestructure.Entity\\Infraestructure.Entity.csproj": {
+    "C:\\Proyecto\\Infraestructure.Entity\\Infraestructure.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyectos\\BookLibraryDaniel\\Infraestructure.Entity\\Infraestructure.Entity.csproj",
+        "projectUniqueName": "C:\\Proyecto\\Infraestructure.Entity\\Infraestructure.Entity.csproj",
         "projectName": "Infraestructure.Entity",
-        "projectPath": "C:\\Proyectos\\BookLibraryDaniel\\Infraestructure.Entity\\Infraestructure.Entity.csproj",
-        "packagesPath": "C:\\Users\\juanp.rodriguez\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyectos\\BookLibraryDaniel\\Infraestructure.Entity\\obj\\",
+        "projectPath": "C:\\Proyecto\\Infraestructure.Entity\\Infraestructure.Entity.csproj",
+        "packagesPath": "C:\\Users\\daniel.vidal\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyecto\\Infraestructure.Entity\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\juanp.rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\daniel.vidal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -96,7 +87,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -130,25 +120,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Proyectos\\BookLibraryDaniel\\Infraestructure\\Infraestructure.csproj": {
+    "C:\\Proyecto\\Infraestructure\\Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyectos\\BookLibraryDaniel\\Infraestructure\\Infraestructure.csproj",
+        "projectUniqueName": "C:\\Proyecto\\Infraestructure\\Infraestructure.csproj",
         "projectName": "Infraestructure",
-        "projectPath": "C:\\Proyectos\\BookLibraryDaniel\\Infraestructure\\Infraestructure.csproj",
-        "packagesPath": "C:\\Users\\juanp.rodriguez\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyectos\\BookLibraryDaniel\\Infraestructure\\obj\\",
+        "projectPath": "C:\\Proyecto\\Infraestructure\\Infraestructure.csproj",
+        "packagesPath": "C:\\Users\\daniel.vidal\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyecto\\Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\juanp.rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\daniel.vidal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -156,18 +142,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Proyectos\\BookLibraryDaniel\\Common\\Common.csproj": {
-                "projectPath": "C:\\Proyectos\\BookLibraryDaniel\\Common\\Common.csproj"
+              "C:\\Proyecto\\Common\\Common.csproj": {
+                "projectPath": "C:\\Proyecto\\Common\\Common.csproj"
               },
-              "C:\\Proyectos\\BookLibraryDaniel\\Infraestructure.Entity\\Infraestructure.Entity.csproj": {
-                "projectPath": "C:\\Proyectos\\BookLibraryDaniel\\Infraestructure.Entity\\Infraestructure.Entity.csproj"
+              "C:\\Proyecto\\Infraestructure.Entity\\Infraestructure.Entity.csproj": {
+                "projectPath": "C:\\Proyecto\\Infraestructure.Entity\\Infraestructure.Entity.csproj"
               }
             }
           }
@@ -217,25 +202,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Proyectos\\BookLibraryDaniel\\Library.Domain\\Library.Domain.csproj": {
+    "C:\\Proyecto\\Library.Domain\\Library.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyectos\\BookLibraryDaniel\\Library.Domain\\Library.Domain.csproj",
+        "projectUniqueName": "C:\\Proyecto\\Library.Domain\\Library.Domain.csproj",
         "projectName": "Library.Domain",
-        "projectPath": "C:\\Proyectos\\BookLibraryDaniel\\Library.Domain\\Library.Domain.csproj",
-        "packagesPath": "C:\\Users\\juanp.rodriguez\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyectos\\BookLibraryDaniel\\Library.Domain\\obj\\",
+        "projectPath": "C:\\Proyecto\\Library.Domain\\Library.Domain.csproj",
+        "packagesPath": "C:\\Users\\daniel.vidal\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyecto\\Library.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\juanp.rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\daniel.vidal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -243,18 +224,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Proyectos\\BookLibraryDaniel\\Common\\Common.csproj": {
-                "projectPath": "C:\\Proyectos\\BookLibraryDaniel\\Common\\Common.csproj"
+              "C:\\Proyecto\\Common\\Common.csproj": {
+                "projectPath": "C:\\Proyecto\\Common\\Common.csproj"
               },
-              "C:\\Proyectos\\BookLibraryDaniel\\Infraestructure\\Infraestructure.csproj": {
-                "projectPath": "C:\\Proyectos\\BookLibraryDaniel\\Infraestructure\\Infraestructure.csproj"
+              "C:\\Proyecto\\Infraestructure\\Infraestructure.csproj": {
+                "projectPath": "C:\\Proyecto\\Infraestructure\\Infraestructure.csproj"
               }
             }
           }
@@ -284,25 +264,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Proyectos\\BookLibraryDaniel\\LibraryWeb\\LibraryWeb.csproj": {
+    "C:\\Proyecto\\LibraryWeb\\LibraryWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyectos\\BookLibraryDaniel\\LibraryWeb\\LibraryWeb.csproj",
+        "projectUniqueName": "C:\\Proyecto\\LibraryWeb\\LibraryWeb.csproj",
         "projectName": "LibraryWeb",
-        "projectPath": "C:\\Proyectos\\BookLibraryDaniel\\LibraryWeb\\LibraryWeb.csproj",
-        "packagesPath": "C:\\Users\\juanp.rodriguez\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyectos\\BookLibraryDaniel\\LibraryWeb\\obj\\",
+        "projectPath": "C:\\Proyecto\\LibraryWeb\\LibraryWeb.csproj",
+        "packagesPath": "C:\\Users\\daniel.vidal\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyecto\\LibraryWeb\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\juanp.rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\daniel.vidal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -310,15 +286,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Proyectos\\BookLibraryDaniel\\Library.Domain\\Library.Domain.csproj": {
-                "projectPath": "C:\\Proyectos\\BookLibraryDaniel\\Library.Domain\\Library.Domain.csproj"
+              "C:\\Proyecto\\Library.Domain\\Library.Domain.csproj": {
+                "projectPath": "C:\\Proyecto\\Library.Domain\\Library.Domain.csproj"
               }
             }
           }
@@ -363,7 +339,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Library.Domain.Dto.Editorial.EditorialDto>
+
+<h1>Lista de Editoriales</h1>
+
+<table id="editorialsTable" class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Sede</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var editorial in Model)
+        {
+            <tr>
+                <td>@editorial.Id</td>
+                <td>@editorial.Name</td>
+                <td>@editorial.Sede</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#editorialsTable').DataTable();
+        });
+    </script>
+}

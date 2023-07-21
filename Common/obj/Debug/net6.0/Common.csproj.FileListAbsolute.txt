@@ -26,3 +26,17 @@ C:\Proyectos\BookLibraryDaniel\Common\obj\Debug\net6.0\Common.dll
 C:\Proyectos\BookLibraryDaniel\Common\obj\Debug\net6.0\refint\Common.dll
 C:\Proyectos\BookLibraryDaniel\Common\obj\Debug\net6.0\Common.pdb
 C:\Proyectos\BookLibraryDaniel\Common\obj\Debug\net6.0\ref\Common.dll
+C:\Proyecto\Common\bin\Debug\net6.0\Common.deps.json
+C:\Proyecto\Common\bin\Debug\net6.0\Common.dll
+C:\Proyecto\Common\bin\Debug\net6.0\Common.pdb
+C:\Proyecto\Common\obj\Debug\net6.0\Common.csproj.AssemblyReference.cache
+C:\Proyecto\Common\obj\Debug\net6.0\Common.Resources.GeneralMessages.resources
+C:\Proyecto\Common\obj\Debug\net6.0\Common.csproj.GenerateResource.cache
+C:\Proyecto\Common\obj\Debug\net6.0\Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyecto\Common\obj\Debug\net6.0\Common.AssemblyInfoInputs.cache
+C:\Proyecto\Common\obj\Debug\net6.0\Common.AssemblyInfo.cs
+C:\Proyecto\Common\obj\Debug\net6.0\Common.csproj.CoreCompileInputs.cache
+C:\Proyecto\Common\obj\Debug\net6.0\Common.dll
+C:\Proyecto\Common\obj\Debug\net6.0\refint\Common.dll
+C:\Proyecto\Common\obj\Debug\net6.0\Common.pdb
+C:\Proyecto\Common\obj\Debug\net6.0\ref\Common.dll

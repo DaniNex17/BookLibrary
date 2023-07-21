@@ -44,4 +44,23 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+// Rutas adicionales para AuthorController
+app.MapControllerRoute(
+    name: "author",
+    pattern: "Author/{action}/{id?}",
+    defaults: new { controller = "Author" });
+
+// Rutas adicionales para EditorialController
+app.MapControllerRoute(
+    name: "editorial",
+    pattern: "Editorial/{action}/{id?}",
+    defaults: new { controller = "Editorial" });
+
+// Rutas adicionales para BookController
+app.MapControllerRoute(
+    name: "book",
+    pattern: "Book/{action}/{id?}",
+    defaults: new { controller = "Book" });
+
+
 app.Run();

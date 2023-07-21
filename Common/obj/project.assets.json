@@ -338,24 +338,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\juanp.rodriguez\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\daniel.vidal\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Proyectos\\BookLibraryDaniel\\Common\\Common.csproj",
+      "projectUniqueName": "C:\\Proyecto\\Common\\Common.csproj",
       "projectName": "Common",
-      "projectPath": "C:\\Proyectos\\BookLibraryDaniel\\Common\\Common.csproj",
-      "packagesPath": "C:\\Users\\juanp.rodriguez\\.nuget\\packages\\",
-      "outputPath": "C:\\Proyectos\\BookLibraryDaniel\\Common\\obj\\",
+      "projectPath": "C:\\Proyecto\\Common\\Common.csproj",
+      "packagesPath": "C:\\Users\\daniel.vidal\\.nuget\\packages\\",
+      "outputPath": "C:\\Proyecto\\Common\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\juanp.rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\daniel.vidal\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -363,7 +358,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -407,7 +401,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

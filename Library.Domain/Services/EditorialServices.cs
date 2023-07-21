@@ -1,57 +1,45 @@
 ﻿using Common.Exceptions;
-using Common.Resources;
 using Infraestructure.Entity.Models;
 using Infraestructure.UnitOfWork.Interface;
-using Library.Domain.Dto.Author;
 using Library.Domain.Dto.Editorial;
 using Library.Domain.Services.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Library.Domain.Services
 {
     public class EditorialServices : IEditorialServices
     {
+        #region Attributes
         private readonly IUnitOfWork _unitOfWork;
+        #endregion
 
+        #region Builder
         public EditorialServices(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
+        #endregion
 
-        public async Task<EditorialDto> GetById(int id)
+        #region Methods
+        private EditorialEntity GetById(int id) => _unitOfWork.EditorialRepository.FirstOrDefault(x => x.Id == id);
+
+        public List<EditorialDto> GetAll()
         {
-            EditorialEntity editorial = _unitOfWork.EditorialRepository.FirstOrDefault(x => x.Id == id)
-                ?? throw new BusinessException(GeneralMessages.ItemNoFound);
-            EditorialDto getEditorial = new EditorialDto()
-            {
-                Id = editorial.Id,
-                Name = editorial.Name,
-                Sede = editorial.Sede
+            IEnumerable<EditorialEntity> editorialEntities = _unitOfWork.EditorialRepository.GetAll();
 
-            };
-            return getEditorial;
-        }
-
-        public async Task<IEnumerable<EditorialDto>> GetAll()
-        {
-            var editorialEntities = _unitOfWork.EditorialRepository.GetAll().ToList();
-            var editorialDtos = editorialEntities.Select(editorialEntity => new EditorialDto
+            List<EditorialDto> editorialDtos = editorialEntities.Select(editorialEntity => new EditorialDto
             {
                 Id = editorialEntity.Id,
                 Name = editorialEntity.Name,
-                Sede = editorialEntity.Sede
+                Sede = editorialEntity.Sede,
             }).ToList();
 
             return editorialDtos;
         }
 
-        public async Task Create(EditorialDto editorialDto)
+        public async Task<bool> Create(AddEditorialDto editorialDto)
         {
-            if (_unitOfWork.EditorialRepository.FirstOrDefault(x => x.Name == editorialDto.Name && x.Sede == editorialDto.Sede) != null)
+            if (_unitOfWork.EditorialRepository.FirstOrDefault(x => x.Name.ToLower() == editorialDto.Name.ToLower()
+                                                                && x.Sede.ToLower() == editorialDto.Sede.ToLower()) != null)
                 throw new BusinessException("No se puede insertar una editorial duplicada");
 
             EditorialEntity editorialEntity = new EditorialEntity
@@ -61,30 +49,33 @@ namespace Library.Domain.Services
             };
 
             _unitOfWork.EditorialRepository.Insert(editorialEntity);
-            await _unitOfWork.Save();
+
+            return await _unitOfWork.Save() > 0;
         }
 
-        public async Task Update(EditorialDto updateEditorialDto)
+        public async Task<bool> Update(EditorialDto updateEditorialDto)
         {
-            EditorialEntity editorialEntity = _unitOfWork.EditorialRepository.FirstOrDefault(x => x.Id == updateEditorialDto.Id);
+            EditorialEntity editorialEntity = GetById(updateEditorialDto.Id);
             if (editorialEntity == null)
                 throw new BusinessException("El editor no existe");
 
             editorialEntity.Name = updateEditorialDto.Name;
             editorialEntity.Sede = updateEditorialDto.Sede;
-
             _unitOfWork.EditorialRepository.Update(editorialEntity);
-            await _unitOfWork.Save();
+
+            return await _unitOfWork.Save() > 0;
         }
 
-        public async Task Delete(int id)
+        public async Task<bool> Delete(int id)
         {
-            EditorialEntity editorialEntity = _unitOfWork.EditorialRepository.FirstOrDefault(x => x.Id == id);
+            EditorialEntity editorialEntity = GetById(id);
             if (editorialEntity == null)
                 throw new BusinessException("El editor no existe");
 
             _unitOfWork.EditorialRepository.Delete(editorialEntity);
-            await _unitOfWork.Save();
-        }    
+
+            return await _unitOfWork.Save() > 0;
+        }
+        #endregion
     }
 }

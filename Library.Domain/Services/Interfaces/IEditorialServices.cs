@@ -1,4 +1,5 @@
-﻿using Library.Domain.Dto.Editorial;
+﻿using Library.Domain.Dto.Author;
+using Library.Domain.Dto.Editorial;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,9 @@ namespace Library.Domain.Services.Interfaces
 {
     public interface IEditorialServices
     {
-        Task<IEnumerable<EditorialDto>> GetAll();
-        Task<EditorialDto> GetById(int id);
-        Task Create(EditorialDto editorialDto);
-        Task Update(EditorialDto editorialDto);
-        Task Delete(int id);
+        List<EditorialDto> GetAll();
+        Task<bool> Create(AddEditorialDto editorialDto);
+        Task<bool> Update(EditorialDto updateEditorialDto);
+        Task<bool> Delete(int id);
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OVIMCckagbLXqMp1eWwRcXJyDJHJ0pKj3q7d9zJuf3Nq321szXundKDj0+u60BVSVQFpT9+ic+D2/iOMI3Cwxw==",
+  "dgSpecHash": "BtOSAc/Q2i9q/tMAga9UoKnKlrJ4bdrWhZHWUScZSCY0QpWRBbLIv6bXWGGFIDRkeI198/pF2dV8+9/lsg3YIA==",
   "success": true,
-  "projectFilePath": "C:\\Proyectos\\BookLibraryDaniel\\Infraestructure.Entity\\Infraestructure.Entity.csproj",
+  "projectFilePath": "C:\\Proyecto\\Infraestructure.Entity\\Infraestructure.Entity.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

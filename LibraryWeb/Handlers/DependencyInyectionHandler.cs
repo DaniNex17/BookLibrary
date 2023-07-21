@@ -2,6 +2,8 @@
 using Infraestructure.Repository;
 using Infraestructure.UnitOfWork.Interface;
 using Infraestructure.UnitOfWork;
+using Library.Domain.Services.Interfaces;
+using Library.Domain.Services;
 
 namespace LibraryWeb.Handlers
 {
@@ -16,13 +18,11 @@ namespace LibraryWeb.Handlers
             //services.AddScoped<SeedDb>();
 
             ////Domain
-            
-
-            //services.AddTransient<IUserServices, UserServices>();
-
-            //services.AddTransient<IRoleServices, RoleServices>();
-
-            
+            services.AddTransient<IAuthorServices, AuthorServices>();
+            services.AddTransient<IEditorialServices, EditorialServices>();
+            services.AddTransient<IBookServices, BookServices>();
+            services.AddTransient<IRoleServices, RoleServices>();
+            services.AddTransient<IUserServices, UserServices>();
 
         }
     }

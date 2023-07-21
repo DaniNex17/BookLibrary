@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Proyectos\\BookLibraryDaniel\\Infraestructure.Entity\\Infraestructure.Entity.csproj": {}
+    "C:\\Proyecto\\Infraestructure.Entity\\Infraestructure.Entity.csproj": {}
   },
   "projects": {
-    "C:\\Proyectos\\BookLibraryDaniel\\Infraestructure.Entity\\Infraestructure.Entity.csproj": {
+    "C:\\Proyecto\\Infraestructure.Entity\\Infraestructure.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Proyectos\\BookLibraryDaniel\\Infraestructure.Entity\\Infraestructure.Entity.csproj",
+        "projectUniqueName": "C:\\Proyecto\\Infraestructure.Entity\\Infraestructure.Entity.csproj",
         "projectName": "Infraestructure.Entity",
-        "projectPath": "C:\\Proyectos\\BookLibraryDaniel\\Infraestructure.Entity\\Infraestructure.Entity.csproj",
-        "packagesPath": "C:\\Users\\juanp.rodriguez\\.nuget\\packages\\",
-        "outputPath": "C:\\Proyectos\\BookLibraryDaniel\\Infraestructure.Entity\\obj\\",
+        "projectPath": "C:\\Proyecto\\Infraestructure.Entity\\Infraestructure.Entity.csproj",
+        "packagesPath": "C:\\Users\\daniel.vidal\\.nuget\\packages\\",
+        "outputPath": "C:\\Proyecto\\Infraestructure.Entity\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\juanp.rodriguez\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\daniel.vidal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

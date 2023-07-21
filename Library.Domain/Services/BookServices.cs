@@ -15,20 +15,26 @@ namespace Library.Domain.Services
 {
     public class BookServices : IBookServices
     {
+        #region Attributes
         private readonly IUnitOfWork _unitOfWork;
+        #endregion
 
+
+        #region Builder
         public BookServices(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
+        #endregion
 
+        #region Methods
         public async Task<BookDto> GetById(int id)
         {
             BookEntity bookEntity = _unitOfWork.BookRepository.FirstOrDefault(x => x.Id == id);
             if (bookEntity == null)
                 throw new BusinessException(GeneralMessages.ItemNoFound);
 
-            var bookDto = new BookDto
+            BookDto bookDto = new BookDto
             {
                 Id = bookEntity.Id,
                 Title = bookEntity.Title,
@@ -58,7 +64,7 @@ namespace Library.Domain.Services
                 AuthorName = bookEntity.AuthorEntity.FullName,
                 IdEditorial = bookEntity.IdEditorial,
                 EditorialName = bookEntity.EditorialEntity.Name
-            });
+            }).ToList();
 
             return bookDtos;
         }
@@ -107,6 +113,7 @@ namespace Library.Domain.Services
 
             _unitOfWork.BookRepository.Delete(bookEntity);
             await _unitOfWork.Save();
-        }
+        } 
+        #endregion
     }
 }

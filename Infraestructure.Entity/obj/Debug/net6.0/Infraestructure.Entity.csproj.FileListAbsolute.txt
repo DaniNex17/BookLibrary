@@ -22,3 +22,15 @@ C:\Proyectos\BookLibraryDaniel\Infraestructure.Entity\obj\Debug\net6.0\Infraestr
 C:\Proyectos\BookLibraryDaniel\Infraestructure.Entity\obj\Debug\net6.0\refint\Infraestructure.Entity.dll
 C:\Proyectos\BookLibraryDaniel\Infraestructure.Entity\obj\Debug\net6.0\Infraestructure.Entity.pdb
 C:\Proyectos\BookLibraryDaniel\Infraestructure.Entity\obj\Debug\net6.0\ref\Infraestructure.Entity.dll
+C:\Proyecto\Infraestructure.Entity\bin\Debug\net6.0\Infraestructure.Entity.deps.json
+C:\Proyecto\Infraestructure.Entity\bin\Debug\net6.0\Infraestructure.Entity.dll
+C:\Proyecto\Infraestructure.Entity\bin\Debug\net6.0\Infraestructure.Entity.pdb
+C:\Proyecto\Infraestructure.Entity\obj\Debug\net6.0\Infraestructure.Entity.csproj.AssemblyReference.cache
+C:\Proyecto\Infraestructure.Entity\obj\Debug\net6.0\Infraestructure.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyecto\Infraestructure.Entity\obj\Debug\net6.0\Infraestructure.Entity.AssemblyInfoInputs.cache
+C:\Proyecto\Infraestructure.Entity\obj\Debug\net6.0\Infraestructure.Entity.AssemblyInfo.cs
+C:\Proyecto\Infraestructure.Entity\obj\Debug\net6.0\Infraestructure.Entity.csproj.CoreCompileInputs.cache
+C:\Proyecto\Infraestructure.Entity\obj\Debug\net6.0\Infraestructure.Entity.dll
+C:\Proyecto\Infraestructure.Entity\obj\Debug\net6.0\refint\Infraestructure.Entity.dll
+C:\Proyecto\Infraestructure.Entity\obj\Debug\net6.0\Infraestructure.Entity.pdb
+C:\Proyecto\Infraestructure.Entity\obj\Debug\net6.0\ref\Infraestructure.Entity.dll

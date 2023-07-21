@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Library.Domain.Dto.Book.BookDto>
+
+<h1>Lista de Libros</h1>
+
+<table id="booksTable" class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Sinopsis</th>
+            <th>Número de Páginas</th>
+            <th>URL de Imagen</th>
+            <th>Autor</th>
+            <th>Editorial</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+            <tr>
+                <td>@book.Id</td>
+                <td>@book.Title</td>
+                <td>@book.Sinopsis</td>
+                <td>@book.N_Pages</td>
+                <td>@book.UrlImage</td>
+                <td>@book.AuthorName</td>
+                <td>@book.EditorialName</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#booksTable').DataTable();
+        });
+    </script>
+}
